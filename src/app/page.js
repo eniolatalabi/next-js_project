@@ -30,13 +30,25 @@ const Homepage = async () => {
             </Link>
           </div>
           <div className={styles.heroSocials}>
-            <a href="https://github.com" target="_blank" rel="noreferrer">
+            <a
+              href="https://github.com/eniolatalabi"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaGithub size={20} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.linkedin.com/in/eniolasolomontalabi/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaLinkedin size={20} />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noreferrer">
+            <a
+              href="https://x.com/moonboy_dev/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaXTwitter size={20} />
             </a>
           </div>

@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+  color: var(--textSoft);
+  font-size: 14px;
+  border-top: 1px solid var(--bgSoft);
+}
