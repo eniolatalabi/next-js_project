@@ -1,5 +1,6 @@
 "use client";
 
+import { HiMenu, HiX } from "react-icons/hi";
 import { useState } from "react";
 import styles from "./links.module.css";
 import NavLink from "./navLink/navLink";
@@ -27,9 +28,7 @@ const Links = () => {
         ))}
         {session ? (
           <>
-            {isAdmin && (
-              <NavLink item={{ title: "Admin", path: "/admin" }} />
-            )}
+            {isAdmin && <NavLink item={{ title: "Admin", path: "/admin" }} />}
             <button className={styles.logout}>Logout</button>
           </>
         ) : (
@@ -42,7 +41,7 @@ const Links = () => {
         className={styles.menuButton}
         onClick={() => setOpen((prev) => !prev)}
       >
-        Menu
+        {open ? <HiX size={24} /> : <HiMenu size={24} />}
       </button>
 
       {/* Mobile dropdown */}
@@ -51,6 +50,19 @@ const Links = () => {
           {links.map((link) => (
             <NavLink item={link} key={link.path} />
           ))}
+          {session ? (
+            <>
+              {isAdmin && <NavLink item={{ title: "Admin", path: "/admin" }} />}
+              <button
+                className={styles.logout}
+                onClick={() => console.log("logout")}
+              >
+                Logout
+              </button>
+            </>
+          ) : (
+            <NavLink item={{ title: "Login", path: "/login" }} />
+          )}
         </div>
       )}
     </div>

@@ -47,7 +47,7 @@ a {
 @media (max-width: 1280px) {
   .container {
     width: 1024px;
-    padduing: 0 20px;
+    padding: 0 20px;
   }
 }
 

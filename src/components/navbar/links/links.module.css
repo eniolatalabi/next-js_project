@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  position: relative;
 }
 
 /* Desktop links — hidden on mobile */
@@ -12,13 +13,20 @@
 }
 
 .logout {
-  padding: 10px 20px;
-  background-color: var(--btn);
+  padding: 8px 20px;
+  background-color: transparent;
   color: var(--text);
   font-weight: bold;
-  border: none;
+  border: 2px solid var(--text);
   border-radius: 20px;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logout:hover {
+  border:2px solid  var(--btn);
+  color: var(--btn);
+
 }
 
 /* Hamburger button — hidden on desktop, visible on mobile */
@@ -36,15 +44,27 @@
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 100px;
+  top: 50px;
   right: 0;
-  width: 50%;
-  height: calc(100vh - 100px);
+  width: 200px;
   background-color: var(--bgSoft);
-  gap: 20px;
-  padding: 20px;
+  gap: 10px;
+  padding: 30px;
   align-items: center;
   z-index: 999;
+  border-radius: 0 0 0 12px;
+  animation: slideDown 0.2s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Responsive breakpoint */
