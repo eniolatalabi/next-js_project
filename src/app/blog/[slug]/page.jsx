@@ -2,6 +2,7 @@ import styles from "./page.module.css";
 import Image from "next/image";
 import { getPostBySlug } from "@/lib/data";
 import { notFound } from "next/navigation";
+import Link from "next/link";
 
 const SinglePostPage = async ({ params }) => {
   const { slug } = await params;
@@ -14,6 +15,9 @@ const SinglePostPage = async ({ params }) => {
       {/* TOP — post header */}
       <div className={styles.top}>
         <div className={styles.info}>
+          <Link href="/blog" className={styles.backButton}>
+            ← Back to Blog
+          </Link>
           <h1 className={styles.title}>{post.title}</h1>
           <div className={styles.meta}>
             <span className={styles.category}>{post.catSlug}</span>

@@ -80,6 +80,18 @@
   font-style: italic;
 }
 
+.backButton {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--textSoft);
+  transition: color 0.2s ease;
+  width: fit-content;
+}
+
+.backButton:hover {
+  color: var(--btn);
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .top {
