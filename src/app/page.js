@@ -4,7 +4,7 @@ import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { getPosts } from "@/lib/data";
-import PostCard from "@/components/postCard/postCard";
+import PostCard from "@/components/postCard/PostCard";
 
 const Homepage = async () => {
   const posts = await getPosts();

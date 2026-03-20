@@ -13,7 +13,7 @@ const links = [
   { title: "Homepage", path: "/" },
   { title: "About", path: "/about" },
   { title: "Contact", path: "/contact" },
-  { title: "Blog", path: "/posts" },
+  { title: "Blog", path: "/blog" },
 ];
 
 const Links = () => {
@@ -53,10 +53,7 @@ const Links = () => {
           {session ? (
             <>
               {isAdmin && <NavLink item={{ title: "Admin", path: "/admin" }} />}
-              <button
-                className={styles.logout}
-                onClick={() => console.log("logout")}
-              >
+              <button className={styles.logout} onClick={() => {}}>
                 Logout
               </button>
             </>
