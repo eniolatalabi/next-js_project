@@ -6,7 +6,13 @@ const PostCard = ({ post }) => {
   return (
     <div className={styles.container}>
       <div className={styles.imageContainer}>
-        <Image src={post.img} alt={post.title} fill className={styles.image} />
+        <Image
+          src={post.img}
+          alt={post.title}
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
+          className={styles.image}
+        />
       </div>
       <div className={styles.textContainer}>
         <span className={styles.category}>{post.catSlug}</span>

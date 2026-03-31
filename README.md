@@ -4,7 +4,7 @@ A personal tech blog built with Next.js 14. Writing about AI, full-stack enginee
 
 ## Live Demo
 
-[Add Vercel URL after deployment]
+[moonboyblog.vercel.app](https://moonboyblog.vercel.app)
 
 ## Tech Stack
 

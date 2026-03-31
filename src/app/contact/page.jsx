@@ -11,6 +11,7 @@ const ContactPage = () => {
           src="https://images.pexels.com/photos/5926382/pexels-photo-5926382.jpeg"
           alt="Contact"
           fill
+          sizes="(max-width: 768px) 100vw, 50vw"
           className={styles.image}
         />
       </div>

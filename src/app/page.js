@@ -59,6 +59,7 @@ const Homepage = async () => {
             src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg"
             alt="Developer working"
             fill
+            sizes="(max-width: 768px) 100vw, 50vw"
             className={styles.image}
           />
         </div>
@@ -71,7 +72,7 @@ const Homepage = async () => {
         </h2>
         <div className={styles.postList}>
           {posts.map((post) => (
-            <PostCard key={post._id} post={post} />
+            <PostCard key={post._id.toString()} post={post} />
           ))}
         </div>
       </div>

@@ -23,6 +23,7 @@ const AboutPage = () => {
             src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg"
             alt="About Moonboy"
             fill
+            sizes="(max-width: 768px) 100vw, 50vw"
             className={styles.image}
           />
         </div>
